@@ -309,3 +309,34 @@
     color: rgb(51, 51, 51);
     font-size: 20px;
 }
+
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    top: 20%;
+    left: 30%;
+    width: 604px;
+    height: 604px;
+   
+    background: url('../images/XOsX.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }

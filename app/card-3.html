@@ -14,6 +14,9 @@
 
 <body>
 
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
 
     <header class="header">
         <div class="container">
@@ -200,7 +203,16 @@
 
 
 
-
+  <script src="/examples/vendors/jquery/jquery-3.4.1.min.js"></script>
+<script>
+   window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
 
 
     <script type="text/javascript"> document.umnicoWidgetHash = '6d4ce4c183fba4d8967f8b8fe33ea237'; var x = document.createElement('script'); x.src = 'https://umnico.com/assets/widget-loader.js'; x.type = 'text/javascript'; x.charset = 'UTF-8'; x.async = true; document.body.appendChild(x); </script>
