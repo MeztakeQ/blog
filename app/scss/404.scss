@@ -1,0 +1,67 @@
+main {
+   
+    background-color: #000084;
+    color: #bbb;
+    font-family: 'more_perfect_dos_vgaregular', 'Courier New', monospace;
+    font-size: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    main {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+.notfound {
+    width: 70ch;
+    height: 25ch;
+    background-color: #000084;
+}
+
+.row {
+    text-align: left;
+}
+
+.centered {
+    text-align: center;
+}
+
+.inverted {
+    background-color: #bbb;
+    color: #000084;
+}
+
+.shadow {
+    background-color: #000;
+    color: #000084;
+}
+
+.blink {
+    animation: blinkingText .8s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        opacity: 0;
+    }
+    
+    49% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+}
+
